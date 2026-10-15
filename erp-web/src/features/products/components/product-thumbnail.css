@@ -1,0 +1,9 @@
+.product-thumbnail-empty {
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  color: #98a2b3;
+  display: inline-flex;
+  font-size: 11px;
+  justify-content: center;
+  text-align: center;
+}

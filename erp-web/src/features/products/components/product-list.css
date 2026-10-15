@@ -1,0 +1,21 @@
+.product-list-header-extra {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.product-list-shop-name {
+  max-width: 220px;
+  color: #087f5b;
+}
+
+.product-name-text {
+  display: block;
+  max-width: 190px;
+}
+
+.product-sku-panel {
+  background: #fafcfc;
+  border-top: 1px solid #edf0f0;
+  padding: 14px 24px 18px 52px;
+}

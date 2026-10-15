@@ -1,0 +1,16 @@
+**
+!Dockerfile
+!pyproject.toml
+!README.md
+!src/
+!src/**
+!scripts/
+!scripts/**
+!app/
+!app/parsers/
+!app/parsers/**
+!backend/
+!backend/app/
+!backend/app/**
+**/__pycache__/
+**/*.pyc

@@ -1,0 +1,35 @@
+import { lazy } from 'react'
+
+export const DashboardPage = lazy(() => import('@/features/dashboard/pages/dashboard-page'))
+export const BestsellersPage = lazy(() => import('@/features/bestsellers/pages/bestsellers-page'))
+export const AffiliateCenterPage = lazy(() => import('@/features/affiliate-center/pages/affiliate-center-page'))
+export const AffiliateLiveAccountPage = lazy(
+  () => import('@/features/affiliate-center/pages/affiliate-live-account-page'),
+)
+export const AffiliateCreatorDetailPage = lazy(
+  () => import('@/features/affiliate-center/pages/affiliate-creator-detail-page'),
+)
+export const DataRolloutPage = lazy(() => import('@/features/data/pages/data-rollout-page'))
+export const FinanceOverviewPage = lazy(() => import('@/features/finance/pages/finance-overview-page'))
+export const FinanceOrdersPage = lazy(() => import('@/features/finance/pages/finance-orders-page'))
+export const FinancePaymentsPage = lazy(() => import('@/features/finance/pages/finance-payments-page'))
+export const FinanceReconciliationPage = lazy(() => import('@/features/finance/pages/finance-reconciliation-page'))
+export const FinanceStatementDetailPage = lazy(() => import('@/features/finance/pages/finance-statement-detail-page'))
+export const FinanceStatementsPage = lazy(() => import('@/features/finance/pages/finance-statements-page'))
+export const FinanceTransactionsPage = lazy(() => import('@/features/finance/pages/finance-transactions-page'))
+export const LogisticsPage = lazy(() => import('@/features/logistics/pages/logistics-page'))
+export const LogisticsStatusPage = lazy(() => import('@/features/logistics/pages/logistics-status-page'))
+export const LogisticsCarriersPage = lazy(() => import('@/features/logistics/pages/logistics-carriers-page'))
+export const LogisticsExceptionsPage = lazy(() => import('@/features/logistics/pages/logistics-exceptions-page'))
+export const LogisticsPackageEditorPage = lazy(() => import('@/features/logistics/pages/logistics-package-editor-page'))
+export const LogisticsReviewPage = lazy(() => import('@/features/logistics/pages/logistics-review-page'))
+export const LogisticsShippingPage = lazy(() => import('@/features/logistics/pages/logistics-shipping-page'))
+export const LogisticsTaskDetailPage = lazy(() => import('@/features/logistics/pages/logistics-task-detail-page'))
+export const ReturnsPage = lazy(() => import('@/features/logistics/pages/returns-page'))
+export const ReturnDetailPage = lazy(() => import('@/features/logistics/pages/return-detail-page'))
+export const OrderDetailPage = lazy(() => import('@/features/orders/pages/order-detail-page'))
+export const OrderListPage = lazy(() => import('@/features/orders/pages/order-list-page'))
+export const ProductDetailPage = lazy(() => import('@/features/products/pages/product-detail-page'))
+export const ProductListPage = lazy(() => import('@/features/products/pages/product-list-page'))
+export const SettingDetailPage = lazy(() => import('@/features/settings/pages/setting-detail-page'))
+export const SettingListPage = lazy(() => import('@/features/settings/pages/setting-list-page'))

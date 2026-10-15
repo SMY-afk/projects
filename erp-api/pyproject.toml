@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "erp-api"
+version = "0.1.0"
+description = "ERP backend API service"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.116,<0.117",
+  "pydantic-settings>=2.10,<3",
+  "sqlalchemy[asyncio]>=2.0,<3",
+  "asyncpg>=0.30,<1",
+  "alembic>=1.16,<2",
+  "redis>=5,<6",
+  "arq>=0.26,<1",
+  "selenium>=4.27,<5",
+  "boto3>=1.40,<2",
+  "cryptography>=45,<46",
+  "httpx>=0.28,<0.29",
+  "playwright>=1.62,<2",
+  "python-multipart>=0.0.20,<1",
+  "tzdata>=2025.2,<2027",
+  "uvicorn[standard]>=0.35,<0.36",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.4,<9",
+  "pytest-asyncio>=1.2,<2",
+  "ruff>=0.16,<0.17",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/erp_api/routers/*.py" = ["B008"]
+"tests/test_permission_dependencies.py" = ["B008"]

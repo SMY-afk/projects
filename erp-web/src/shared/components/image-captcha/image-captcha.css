@@ -1,0 +1,18 @@
+.image-captcha {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+}
+
+.image-captcha__image,
+.image-captcha__placeholder {
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 42px;
+  width: 126px;
+}
+
+.image-captcha__placeholder {
+  background: #f5f5f5;
+}

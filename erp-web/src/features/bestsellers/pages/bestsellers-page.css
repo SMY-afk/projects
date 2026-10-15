@@ -1,0 +1,184 @@
+.bestsellers-page {
+  display: flex;
+  padding: 24px;
+  width: 100%;
+}
+
+.bestsellers-page-header {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bestsellers-page-header .ant-typography {
+  margin-bottom: 4px;
+}
+
+.bestseller-filter-card .ant-card-body {
+  padding: 12px 16px;
+}
+
+.bestseller-filter-bar {
+  align-items: flex-end;
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.bestseller-filter-field {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bestseller-filter-field > span {
+  color: #758582;
+  font-size: 12px;
+}
+
+.bestseller-filter-field .ant-select {
+  min-width: 138px;
+}
+
+.bestseller-filter-field:first-child .ant-select {
+  min-width: 210px;
+}
+
+.bestseller-filter-actions {
+  margin-left: auto;
+}
+
+.bestseller-ranking-card .ant-card-body {
+  padding-top: 10px;
+}
+
+.bestseller-insights {
+  margin-bottom: 20px;
+}
+
+.bestseller-insights-heading {
+  align-items: baseline;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.bestseller-insights-heading .ant-typography {
+  margin: 0;
+}
+
+.bestseller-insight-card {
+  background: linear-gradient(135deg, #f7fbfa 0%, #ffffff 100%);
+  border-color: #dce8e5;
+  height: 100%;
+}
+
+.bestseller-insight-card .ant-statistic-content {
+  color: #073f3a;
+  font-size: 22px;
+}
+
+.bestseller-card-status {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 28px;
+}
+
+.bestseller-sync-status {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.bestseller-stale-alert {
+  margin-bottom: 12px;
+}
+
+.bestseller-sync-alert {
+  margin-bottom: 12px;
+}
+
+.bestseller-table-loading {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  min-height: 260px;
+}
+
+.bestseller-ranking-card .ant-table-body {
+  scrollbar-gutter: stable;
+}
+
+@media (max-width: 1080px) {
+  .bestseller-filter-bar {
+    flex-wrap: wrap;
+  }
+
+  .bestseller-filter-actions {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .bestsellers-page {
+    padding: 12px;
+  }
+
+  .bestseller-filter-card .ant-card-body {
+    padding: 10px;
+  }
+
+  .bestseller-filter-bar {
+    align-items: end;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bestseller-filter-field,
+  .bestseller-filter-field .ant-picker,
+  .bestseller-filter-field .ant-select {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .bestseller-filter-field:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .bestseller-filter-field:first-child .ant-select {
+    min-width: 0;
+  }
+
+  .bestseller-filter-actions {
+    justify-content: flex-end;
+    grid-column: 1 / -1;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .bestseller-card-status {
+    justify-content: flex-start;
+  }
+
+  .bestseller-insights-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+@media (max-width: 380px) {
+  .bestseller-filter-bar {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .bestseller-filter-field:first-child,
+  .bestseller-filter-actions {
+    grid-column: auto;
+  }
+}

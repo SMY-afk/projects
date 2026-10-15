@@ -1,0 +1,180 @@
+.erp-layout {
+  background: #f4f7f8;
+  min-height: 100vh;
+}
+.erp-topbar {
+  align-items: center;
+  background: #073b3a;
+  color: #fff;
+  display: flex;
+  height: 62px;
+  padding: 0 24px;
+}
+.erp-brand {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  font-size: 15px;
+  gap: 9px;
+  margin-right: 30px;
+  white-space: nowrap;
+}
+.erp-brand-mark {
+  align-items: center;
+  background: #eab84d;
+  border-radius: 6px;
+  color: #073b3a;
+  display: inline-flex;
+  font-size: 14px;
+  height: 27px;
+  justify-content: center;
+  width: 27px;
+}
+.top-navigation {
+  align-self: stretch;
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+}
+.top-navigation button {
+  background: transparent;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  color: #bbd1cd;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0 14px;
+  white-space: nowrap;
+}
+.top-navigation button:hover,
+.top-navigation button.active {
+  border-bottom-color: #eab84d;
+  color: #fff;
+}
+.top-actions {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
+.top-actions .ant-btn {
+  color: #c5d9d5;
+}
+.top-actions .ant-btn:hover {
+  background: #195b57;
+  color: #fff;
+}
+.top-actions .user-menu {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+  margin-left: 8px;
+}
+.secondary-navigation {
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #e7ecec;
+  box-shadow: 0 1px 4px rgb(17 55 53 / 4%);
+  display: flex;
+  height: 50px;
+  padding: 0 24px;
+}
+.secondary-tabs {
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  gap: 3px;
+  min-width: 0;
+  overflow-x: auto;
+}
+.page-tab {
+  align-items: stretch;
+  border-bottom: 2px solid transparent;
+  display: flex;
+  flex: 0 0 auto;
+}
+.page-tab-link,
+.page-tab-close {
+  background: transparent;
+  border: 0;
+  color: #60726f;
+  cursor: pointer;
+  font-size: 14px;
+}
+.page-tab-link {
+  padding: 0 10px 0 18px;
+  white-space: nowrap;
+}
+.page-tab-close {
+  color: #91a19e;
+  font-size: 10px;
+  padding: 0 8px 0 2px;
+}
+.page-tab:hover,
+.page-tab.active {
+  border-bottom-color: #167169;
+}
+.page-tab:hover .page-tab-link,
+.page-tab.active .page-tab-link {
+  color: #075a54;
+  font-weight: 600;
+}
+.page-tab-close:hover {
+  color: #d14343;
+}
+.secondary-tabs .add-page {
+  align-self: center;
+  border: 1px dashed #b5c7c3;
+  border-radius: 4px;
+  color: #426764;
+  height: 26px;
+  margin-left: 7px;
+  padding: 0;
+  width: 30px;
+}
+.current-page {
+  color: #94a39f;
+  font-size: 13px;
+  margin-left: auto;
+  padding-left: 16px;
+  white-space: nowrap;
+}
+@media (max-width: 1050px) {
+  .erp-topbar {
+    padding: 0 14px;
+  }
+  .erp-brand strong {
+    display: none;
+  }
+  .erp-brand {
+    margin-right: 12px;
+  }
+  .top-navigation button {
+    padding: 0 10px;
+  }
+  .secondary-navigation {
+    padding: 0 14px;
+  }
+}
+@media (max-width: 680px) {
+  .erp-topbar {
+    height: 54px;
+  }
+  .top-navigation {
+    max-width: calc(100vw - 170px);
+  }
+  .top-actions .ant-btn:not(.user-menu) {
+    display: none;
+  }
+  .secondary-navigation {
+    height: 44px;
+  }
+  .page-tab-link {
+    padding: 0 7px 0 11px;
+  }
+  .page-tab-close {
+    padding-right: 5px;
+  }
+  .current-page {
+    display: none;
+  }
+}

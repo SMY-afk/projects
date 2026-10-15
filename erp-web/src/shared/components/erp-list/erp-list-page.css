@@ -1,0 +1,87 @@
+.erp-list-page {
+  background: #f4f7f8;
+  min-height: calc(100vh - 112px);
+  padding: 24px;
+}
+.erp-list-header {
+  background: #fff;
+  border: 1px solid #e5ecea;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 18px 20px;
+}
+.erp-list-header .ant-typography {
+  margin: 0;
+}
+.erp-list-title-row {
+  align-items: baseline;
+  display: flex;
+  gap: 16px;
+}
+.erp-list-header h4.ant-typography {
+  margin-bottom: 5px;
+}
+.erp-list-filters {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e5ecea;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 14px;
+}
+.erp-list-filters .ant-input-affix-wrapper {
+  max-width: 320px;
+}
+.erp-list-batch-bar {
+  align-items: center;
+  background: #edf8f6;
+  border: 1px solid #cbe8e2;
+  border-radius: 6px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  min-height: 42px;
+  padding: 0 14px;
+}
+.erp-list-page .ant-table-wrapper {
+  background: #fff;
+  border: 1px solid #e5ecea;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.erp-detail-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+}
+.erp-detail-list div {
+  border-bottom: 1px solid #edf0f0;
+  padding: 14px;
+}
+.erp-detail-list dt {
+  color: #758481;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.erp-detail-list dd {
+  color: #243330;
+  margin: 0;
+  word-break: break-word;
+}
+@media (max-width: 680px) {
+  .erp-list-page {
+    padding: 12px;
+  }
+  .erp-list-filters {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .erp-list-filters .ant-input-affix-wrapper {
+    max-width: none;
+  }
+  .erp-detail-list {
+    grid-template-columns: 1fr;
+  }
+}
